@@ -31,6 +31,10 @@
   .tip { background: #fff8dc; border-left: 4px solid var(--gold); padding: 8px 12px; margin: 10px 0; font-size: 14px; }
   .key { display: inline-block; padding: 0 7px; border: 1px solid #b7c2ba; border-radius: 6px; background: #fff; font-size: 13px; }
   small, .dim { color: var(--dim); }
+  .shots { display: flex; flex-wrap: wrap; gap: 12px; margin: 12px 0; }
+  .shots figure { margin: 0; flex: 1 1 200px; max-width: 260px; }
+  .shots img { display: block; width: 100%; height: auto; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,.18); }
+  .shots figcaption { font-size: 13px; color: var(--dim); text-align: center; margin-top: 4px; }
 </style>
 </head>
 <body>
@@ -54,6 +58,8 @@
 <tr><th>AI 학습하기</th><td>내 기록으로 나를 닮은 AI·더 강한 AI를 만듭니다 (<a href="#ai">AI</a>).</td></tr>
 </table>
 
+<div class="shots"><figure><img src="img/guide/lobby.jpg" alt="처음 화면 — 버튼 아래 AI 랭킹" loading="lazy"><figcaption>처음 화면 — 버튼 아래 AI 랭킹</figcaption></figure><figure><img src="img/guide/solo.jpg" alt="혼자 하기 — 인원과 규칙 요약" loading="lazy"><figcaption>혼자 하기 — 인원과 규칙 요약</figcaption></figure></div>
+
 <h2 id="invite">2. 초대·참가</h2>
 <ul>
 <li><b>같은 와이파이·핫스팟</b>: 인터넷 없이도 됩니다. 방장이 방을 열면 같은 와이파이 친구의 참가하기 화면에 방이 뜹니다. 방 키를 넣고 입장하거나 방장 화면의 QR을 찍으세요.</li>
@@ -72,6 +78,8 @@
 <li><span class="key">채팅</span>: 쓴 말은 이름 밑 말풍선으로 10초 동안 보입니다.</li>
 </ul>
 
+<div class="shots"><figure><img src="img/guide/table.jpg" alt="게임 화면 — 바닥, 내 손패, 먹은 패" loading="lazy"><figcaption>게임 화면 — 바닥, 내 손패, 먹은 패</figcaption></figure></div>
+
 <h2 id="rules">4. 규칙</h2>
 <table>
 <tr><th></th><th>2인 (맞고)</th><th>3인</th><th>4·5인</th></tr>
@@ -81,8 +89,14 @@
 <ul>
 <li><b>선 정하기</b>: 첫 판은 <b>밤일낮장</b>(한 장씩 뽑아 밤에는 낮은 월, 낮에는 높은 월이 선). 그다음은 지난 판 승자가 선.</li>
 <li><b>기리</b>: 선 바로 앞 사람이 섞은 덱을 뗍니다 (10초 안에 안 하면 저절로).</li>
+</ul>
+<div class="shots"><figure><img src="img/guide/dealer.jpg" alt="밤일낮장 — 첫 판 선 정하기" loading="lazy"><figcaption>밤일낮장 — 첫 판 선 정하기</figcaption></figure><figure><img src="img/guide/cut.jpg" alt="기리 — 뗄 곳을 누릅니다" loading="lazy"><figcaption>기리 — 뗄 곳을 누릅니다</figcaption></figure></div>
+<ul>
 <li><b>차례</b>: 손패 한 장을 내고 덱에서 한 장을 뒤집습니다. 같은 월끼리 먹습니다. 바닥에 같은 월이 3장이면 다 먹습니다.</li>
 <li><b>뻑</b>: 낸 패와 뒤집은 패가 바닥 한 장과 같은 월이면 셋이 바닥에 남습니다. 그 뻑을 4번째 패로 먹으면 다른 사람마다 피 1장(자기 뻑이면 2장). <b>첫뻑·연뻑</b> 상금(5점 값, 연속 두 번째 2배, 세 번째 4배 + 승리), 한 판에 <b>뻑 세 번</b>이면 승리(10점).</li>
+</ul>
+<div class="shots"><figure><img src="img/guide/flip.jpg" alt="바닥에 같은 월이 두 장이면 먹을 패를 고릅니다" loading="lazy"><figcaption>바닥에 같은 월이 두 장이면 먹을 패를 고릅니다</figcaption></figure><figure><img src="img/guide/burst.jpg" alt="싹쓸이·뻑·쪽·따닥은 크게 알려 줍니다" loading="lazy"><figcaption>싹쓸이·뻑·쪽·따닥은 크게 알려 줍니다</figcaption></figure></div>
+<ul>
 <li><b>쪽</b>(바닥에 없는 월을 냈는데 뒤집은 패가 같은 월), <b>따닥</b>(바닥 2장과 같은 월을 내고 뒤집은 패도 같은 월), <b>쓸</b>(내 차례 끝에 바닥이 빔): 다른 사람마다 피 1장.</li>
 <li><b>흔들기</b>: 같은 월 3장을 쥐고 바닥에 그 월이 없으면, 그 월을 낼 때 흔들 수 있습니다 (손패를 보여 줌). <b>흔들면 그 차례에 흔든 월의 패를 냅니다.</b> 이기면 2배.</li>
 <li><b>폭탄</b>: 같은 월 3장을 쥐고 바닥에 그 월 1장이 있으면 3장을 한꺼번에 내 4장을 먹습니다. 피 1장씩 받고, 이기면 2배, 다음 두 차례는 손패 대신 <b>뒤집기만</b> 할 수 있습니다.</li>
@@ -112,6 +126,7 @@
 <tr><th>고박</th><td>고 한 사람이 있는데 다른 사람이 나면, 고 한 사람이 진 사람들 몫을 모두 냅니다 (3인 이상)</td></tr>
 <tr><th>면제</th><td>판이 끝날 때 먹은 패가 한 장도 없는 사람은 내지 않습니다</td></tr>
 </table>
+<div class="shots"><figure><img src="img/guide/result.jpg" alt="판 결과 — 진 사람마다 낸 돈과 내역 한 줄" loading="lazy"><figcaption>판 결과 — 진 사람마다 낸 돈과 내역 한 줄</figcaption></figure></div>
 <p class="tip">박은 진 사람이 모두 해당하면 바닥 가운데에, 일부만이면 그 사람 먹은 패 위에 크게 표시됩니다.</p>
 
 <h2 id="many">7. 4·5인 (고/쉬기 · 광 팔기)</h2>
@@ -120,6 +135,8 @@
 <li>고가 3명 차면 나머지는 쉬고, 자리가 없어 쉬게 된 사람은 <b>광을 팝니다</b>. 광 팔기 값: 광 1장(보너스 패 포함) 1점, 오광 +10, 8월 새 1점(고도리면 5점), 청단·홍단 3점, 쌍피 1점, 같은 월 3장이면 흔들고 팔아 2배.</li>
 <li>광값은 기본 선불(선을 뺀 두 사람이 냄)이고, 판 광 점수만큼 이긴 사람 점수에도 더합니다. 스스로 쉰 사람(죽기)은 광을 팔지 않습니다.</li>
 </ul>
+
+<div class="shots"><figure><img src="img/guide/sell.jpg" alt="4·5인 — 고/쉬기를 정하는 자리 표" loading="lazy"><figcaption>4·5인 — 고/쉬기를 정하는 자리 표</figcaption></figure></div>
 
 <h2 id="ai">8. AI</h2>
 <ul>
@@ -136,6 +153,8 @@
 <li><b>순위표</b>: 처음 화면 버튼 아래 AI 랭킹 1~5위와 내 순위, 성적 화면에 이번 달·분기 상금 랭킹 1~10위. 설정에서 <b>순위표 참여</b>를 끌 수 있습니다 (끄면 이름이 "익명").</li>
 </ul>
 
+<div class="shots"><figure><img src="img/guide/ai.jpg" alt="AI 학습하기 — AI · 설정 · 기록 탭" loading="lazy"><figcaption>AI 학습하기 — AI · 설정 · 기록 탭</figcaption></figure></div>
+
 <h2 id="settings">9. 설정</h2>
 <ul>
 <li>레버리지(×1·2·3·5·10) · 금액 방식(점당 1,000 / 3·4점 1,000 / 3·4점 2,000) · 판 수</li>
@@ -143,6 +162,8 @@
 <li>보너스 패 장수·삼피 · 피박 · 광박 · 멍박 · 고박 · 흔들기·폭탄 · 총통 · 뻑 · 국진·난초 쌍피 · 비고도리 · 면제 · 합의 · 밤일낮장 등</li>
 <li>턴 시간 · 소리(음성·효과음) · AI 학습용 기록 켬/끔 · 순위표 참여</li>
 </ul>
+
+<div class="shots"><figure><img src="img/guide/settings.jpg" alt="설정 화면" loading="lazy"><figcaption>설정 화면</figcaption></figure></div>
 
 <h2 id="faq">10. 자주 묻는 질문</h2>
 <h3>같은 와이파이인데 방 목록에 방이 안 보여요</h3>
