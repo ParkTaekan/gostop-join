@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>어디나 고스톱 사용설명서</title>
+<meta name="description" content="초대·참가 방법과 고스톱·맞고 규칙(점수·고/스톱·박·흔들기·폭탄·뻑·4·5인 광 팔기·합의)을 한눈에.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Odina Studio · 어디나">
+<meta property="og:title" content="어디나 고스톱 사용설명서">
+<meta property="og:description" content="초대·참가 방법과 고스톱·맞고 규칙(점수·고/스톱·박·흔들기·폭탄·뻑·4·5인 광 팔기·합의)을 한눈에.">
+<meta property="og:url" content="https://parktaekan.github.io/gostop-join/guide.html">
+<meta property="og:image" content="https://parktaekan.github.io/gostop-join/img/gostop-icon-512.png">
+<link rel="icon" href="img/odina-mark-180.png">
+
+<style>
+  :root { --felt: #0e4a31; --gold: #ffd24a; --ink: #1d2420; --dim: #5a665e; --line: #d5dcd6; --bg: #f6f7f4; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: system-ui, -apple-system, "Noto Sans KR", sans-serif; background: var(--bg); color: var(--ink); line-height: 1.7; }
+  header { background: var(--felt); color: #fff; padding: 22px 18px; }
+  header h1 { margin: 0; font-size: 22px; }
+  header p { margin: 4px 0 0; color: #cfe3d7; font-size: 14px; }
+  nav { position: sticky; top: 0; background: #fff; border-bottom: 1px solid var(--line); overflow-x: auto; white-space: nowrap; padding: 8px 12px; z-index: 1; }
+  nav a { display: inline-block; margin-right: 14px; color: var(--felt); text-decoration: none; font-weight: 700; font-size: 14px; }
+  main { max-width: 760px; margin: 0 auto; padding: 8px 18px 60px; }
+  h2 { font-size: 19px; margin-top: 34px; padding-bottom: 6px; border-bottom: 2px solid var(--felt); }
+  h3 { font-size: 16px; margin: 22px 0 6px; }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; margin: 8px 0; }
+  th, td { border: 1px solid var(--line); padding: 7px 8px; text-align: left; vertical-align: top; }
+  th { background: #e7ece7; }
+  .tip { background: #fff8dc; border-left: 4px solid var(--gold); padding: 8px 12px; margin: 10px 0; font-size: 14px; }
+  .key { display: inline-block; padding: 0 7px; border: 1px solid #b7c2ba; border-radius: 6px; background: #fff; font-size: 13px; }
+  small, .dim { color: var(--dim); }
+</style>
+</head>
+<body>
+<header>
+  <img src="img/odina-logo-ko-white.png" alt="어디나 (Odina)" style="height:64px;display:block;margin-bottom:10px">
+  <div style="display:flex;align-items:center;gap:12px"><img src="img/gostop-icon-512.png" alt="" style="width:56px;height:56px;border-radius:12px"><h1>어디나 고스톱 사용설명서</h1></div>
+  <p>같은 와이파이에서, 또는 멀리 있는 친구와 인터넷으로 하는 고스톱·맞고</p>
+</header>
+<nav>
+  <a href="#start">시작하기</a><a href="#invite">초대·참가</a><a href="#screen">게임 화면</a><a href="#rules">규칙</a><a href="#score">점수</a><a href="#money">정산·박</a><a href="#many">4·5인</a><a href="#ai">AI</a><a href="#settings">설정</a><a href="#faq">자주 묻는 질문</a>
+</nav>
+<main>
+
+<h2 id="start">1. 시작하기</h2>
+<p>앱을 열면 <b>이름</b> 칸이 있습니다. 기본 이름을 그대로 쓰거나 바꾸세요. 한 번 넣은 이름은 다음에도 그대로 나옵니다.</p>
+<table>
+<tr><th>혼자 하기</th><td>봇과 바로 한 판. 인원(2인 맞고 · 3인 · 4·5인)을 고르고 <span class="key">입장</span>. 봇은 <b>봇+AI봇 혼합</b>(기본)·봇(보통)·AI봇(뛰어남) 중에서 설정에서 고릅니다.</td></tr>
+<tr><th>방 만들기</th><td>내가 방장이 되어 친구를 부릅니다. 인원·방 이름·방 키를 정하고 방을 엽니다.</td></tr>
+<tr><th>참가하기</th><td>친구가 만든 방에 들어갑니다. QR 찍기, 붙여넣기, 참가 코드, 같은 와이파이의 방 목록 중 편한 것으로.</td></tr>
+<tr><th>성적 보기</th><td>1일 · 1주 · 1개월 · 3개월 · 누적 성적과 이번 달·분기 상금 랭킹.</td></tr>
+<tr><th>AI 학습하기</th><td>내 기록으로 나를 닮은 AI·더 강한 AI를 만듭니다 (<a href="#ai">AI</a>).</td></tr>
+</table>
+
+<h2 id="invite">2. 초대·참가</h2>
+<ul>
+<li><b>같은 와이파이·핫스팟</b>: 인터넷 없이도 됩니다. 방장이 방을 열면 같은 와이파이 친구의 참가하기 화면에 방이 뜹니다. 방 키를 넣고 입장하거나 방장 화면의 QR을 찍으세요.</li>
+<li><b>멀리 있는 친구</b>: 방장 대기실의 <span class="key">카톡 초대</span>로 링크를 보내면, 받은 친구는 링크만 누르면 같은 방에 들어옵니다.</li>
+<li><b>사람이 모자라면</b>: 방장이 <span class="key">빈자리 AI봇으로 채우고 시작</span>을 누르면 AI봇이 빈자리를 채웁니다. 늦게 온 친구는 봇 자리를 구경하다 그 판이 끝나면 이어받습니다.</li>
+<li>게임 중에 나갔다 돌아오면 내 자리를 다시 이어받습니다. 그 사이 내 자리는 AI봇이 둡니다.</li>
+</ul>
+
+<h2 id="screen">3. 게임 화면</h2>
+<ul>
+<li>가운데 <b>바닥</b>(덱을 둘러싼 패), 아래 <b>내 손패</b>, 각 자리의 <b>먹은 패</b>(광·열끗·띠·피 무더기, 장수 표시).</li>
+<li>낼 수 있는(바닥에 같은 월이 있는) 손패는 노란 표시가 붙습니다. 패를 누르면 냅니다. 바닥에 같은 월이 두 장이면 먹을 패를 고릅니다.</li>
+<li>이름 옆: 점수 · 잔액 · 고 · 흔들기 · 폭탄.</li>
+<li><span class="key">AI 추천</span>: 누르면 AI가 고른 다음 수를 알려 주고 낼 패에 파란 테두리를 그립니다. <b>한 번 더 누르면 그 수를 그대로</b> 둡니다.</li>
+<li><span class="key">≡</span> 메뉴: 방 나가기, (방장) 잠시 멈춤·마지막 판 선언·그만하기, <b>AI에게 맡기기</b>, 사용설명서.</li>
+<li><span class="key">채팅</span>: 쓴 말은 이름 밑 말풍선으로 10초 동안 보입니다.</li>
+</ul>
+
+<h2 id="rules">4. 규칙</h2>
+<table>
+<tr><th></th><th>2인 (맞고)</th><th>3인</th><th>4·5인</th></tr>
+<tr><th>손패 / 바닥</th><td>10장 / 8장</td><td>7장 / 6장</td><td>3명이 7장씩 / 6장</td></tr>
+<tr><th>날 점수</th><td>7점</td><td>3점</td><td>3점</td></tr>
+</table>
+<ul>
+<li><b>선 정하기</b>: 첫 판은 <b>밤일낮장</b>(한 장씩 뽑아 밤에는 낮은 월, 낮에는 높은 월이 선). 그다음은 지난 판 승자가 선.</li>
+<li><b>기리</b>: 선 바로 앞 사람이 섞은 덱을 뗍니다 (10초 안에 안 하면 저절로).</li>
+<li><b>차례</b>: 손패 한 장을 내고 덱에서 한 장을 뒤집습니다. 같은 월끼리 먹습니다. 바닥에 같은 월이 3장이면 다 먹습니다.</li>
+<li><b>뻑</b>: 낸 패와 뒤집은 패가 바닥 한 장과 같은 월이면 셋이 바닥에 남습니다. 그 뻑을 4번째 패로 먹으면 다른 사람마다 피 1장(자기 뻑이면 2장). <b>첫뻑·연뻑</b> 상금(5점 값, 연속 두 번째 2배, 세 번째 4배 + 승리), 한 판에 <b>뻑 세 번</b>이면 승리(10점).</li>
+<li><b>쪽</b>(바닥에 없는 월을 냈는데 뒤집은 패가 같은 월), <b>따닥</b>(바닥 2장과 같은 월을 내고 뒤집은 패도 같은 월), <b>쓸</b>(내 차례 끝에 바닥이 빔): 다른 사람마다 피 1장.</li>
+<li><b>흔들기</b>: 같은 월 3장을 쥐고 바닥에 그 월이 없으면, 그 월을 낼 때 흔들 수 있습니다 (손패를 보여 줌). <b>흔들면 그 차례에 흔든 월의 패를 냅니다.</b> 이기면 2배.</li>
+<li><b>폭탄</b>: 같은 월 3장을 쥐고 바닥에 그 월 1장이 있으면 3장을 한꺼번에 내 4장을 먹습니다. 피 1장씩 받고, 이기면 2배, 다음 두 차례는 손패 대신 <b>뒤집기만</b> 할 수 있습니다.</li>
+<li><b>총통</b>: 처음 받은 손패에 같은 월 4장이면 바로 승리 (10점).</li>
+<li><b>보너스 패</b>(기본 3장, 쌍피): 손에 있으면 아무 때나 내서 먹고 덱에서 한 장을 채웁니다. 3장을 다 모으면 피 1장씩.</li>
+<li><b>국진(9월 열끗)</b>: 열끗 또는 쌍피로 쓸 수 있습니다. 피를 뺏길 때 피가 없으면 국진을 쌍피로 줄지 묻습니다. 5월 난초 열끗도 쌍피로 쓰는 규칙은 설정에서 켭니다 (기본 끔).</li>
+<li><b>고 / 스톱</b>: 날 점수가 되면 고(계속) 또는 스톱(끝내고 받기). 고 할 때마다 1점씩 더하고, <b>3고부터 2배, 4고 4배, 5고 8배</b>… 고 한 뒤에는 점수가 더 나야 다시 고·스톱을 고릅니다.</li>
+<li><b>합의(무효요청)</b>: 3명이 치는 판에서 내가 어느 패를 내도 상대 중 한 사람이 바로 나게 되면, 손패를 보여 주고 무효를 청할 수 있습니다. 모두 합의하면 무효(다음 판 2배), 한 사람만 거절하고 그 사람이 지면 진 사람 몫을 혼자 냅니다.</li>
+<li><b>무효</b>: 아무도 못 나고 덱이 떨어지면 무효, 다음 판은 2배 (이어지면 4배, 8배 …).</li>
+</ul>
+
+<h2 id="score">5. 점수</h2>
+<table>
+<tr><th>광</th><td>3광 3점 (비광이 끼면 2점) · 4광 4점 · 5광 15점</td></tr>
+<tr><th>열끗</th><td>5장 1점, 한 장마다 +1. 고도리(2·4·8월 새) 5점</td></tr>
+<tr><th>띠</th><td>5장 1점, 한 장마다 +1. 홍단·청단·초단 각 3점</td></tr>
+<tr><th>피</th><td>10장 1점, 한 장마다 +1 (쌍피 2장, 삼피 3장으로 셈)</td></tr>
+<tr><th>고</th><td>고 한 번마다 +1점</td></tr>
+</table>
+
+<h2 id="money">6. 정산 · 박</h2>
+<p>낼 돈 = <b>점수 값 × 배수</b> × 레버리지. 점수 값은 설정의 금액 방식(기본 <b>점당 1,000</b>)입니다. 판 결과에는 진 사람마다 내역이 나옵니다. 예: <code>5점 5,000 × 3고 2 × 흔들기 2 × 피박 2 = 40,000</code></p>
+<table>
+<tr><th>배수 (모두)</th><td>3고부터 2·4·8배 · 흔들기·폭탄 2배씩 · 무효 다음 판 2배 · 멍박(열끗 7장 이상, 기본 끔) 2배</td></tr>
+<tr><th>피박</th><td>이긴 사람이 피로 점수를 냈고 진 사람의 피가 <b>1장 이상 5장 이하</b>(맞고 7장 이하)면 그 사람만 2배. <b>피가 한 장도 없으면 피박이 아닙니다.</b> 정하지 않은 국진(난초)은 진 사람에게 유리한 쪽으로 셉니다.</td></tr>
+<tr><th>광박</th><td>이긴 사람이 광으로 점수를 냈고 진 사람이 광이 하나도 없으면 그 사람만 2배</td></tr>
+<tr><th>고박</th><td>고 한 사람이 있는데 다른 사람이 나면, 고 한 사람이 진 사람들 몫을 모두 냅니다 (3인 이상)</td></tr>
+<tr><th>면제</th><td>판이 끝날 때 먹은 패가 한 장도 없는 사람은 내지 않습니다</td></tr>
+</table>
+<p class="tip">박은 진 사람이 모두 해당하면 바닥 가운데에, 일부만이면 그 사람 먹은 패 위에 크게 표시됩니다.</p>
+
+<h2 id="many">7. 4·5인 (고/쉬기 · 광 팔기)</h2>
+<ul>
+<li>패를 나눈 뒤 선 다음 사람부터 차례로 <b>고(친다)</b> 또는 <b>쉬기</b>를 정합니다. 선은 무조건 고, <b>앞판에 쉬었으면 이번엔 무조건 고</b>입니다.</li>
+<li>고가 3명 차면 나머지는 쉬고, 자리가 없어 쉬게 된 사람은 <b>광을 팝니다</b>. 광 팔기 값: 광 1장(보너스 패 포함) 1점, 오광 +10, 8월 새 1점(고도리면 5점), 청단·홍단 3점, 쌍피 1점, 같은 월 3장이면 흔들고 팔아 2배.</li>
+<li>광값은 기본 선불(선을 뺀 두 사람이 냄)이고, 판 광 점수만큼 이긴 사람 점수에도 더합니다. 스스로 쉰 사람(죽기)은 광을 팔지 않습니다.</li>
+</ul>
+
+<h2 id="ai">8. AI</h2>
+<ul>
+<li><b>AI봇</b>: 수십만 판을 스스로 두며 배운 인공지능입니다. 이름이 AI사자·AI표범·AI늑대·AI상어로 나옵니다.</li>
+<li><b>AI 추천</b>·<b>AI에게 맡기기</b>: 기본 AI, 또는 [AI 학습하기]에서 만든 내 AI가 둡니다. 맡기는 동안 내 이름 옆에 <b>(AI)</b>가 붙고, 판 속도는 내가 쉬는 판처럼 천천히 갑니다.</li>
+<li><b>AI 학습하기</b> (처음 화면): <b>AI · 설정 · 기록</b> 탭.
+  <ul>
+  <li><b>나를 닮은 AI</b>: 내가 직접 둔 수로 학습 (판 나눠 배우기 · 이긴 판만 · 모든 판).</li>
+  <li><b>더 강한 AI</b>: 혼자 하기·내가 연 방의 모든 자리 기록(이름 없이 사람·AI·봇만)에서 그 판 승자의 수를 따라 하고, 가장 많이 잃은 자리의 실수는 피합니다.</li>
+  <li>학습이 끝나면 바로 <b>평점</b>(AI+봇 상대 100판, 기본 AI = 1500)을 재고, 있던 AI보다 낮으면 저장하지 않습니다. 아니면 저장할지 묻습니다.</li>
+  <li><b>이어서 학습</b>: 저장된 AI에서 시작해 새로 둔 판만 더 배웁니다 (설정 탭에서 "처음부터"로 바꿀 수 있음).</li>
+  <li>평점이 기본 AI보다 높으면 <b>기여하기</b>로 기록을 이름 없이 보내 다음 기본 AI를 키우는 데 보탤 수 있습니다. <b>기록 주고받기</b>로 친구 기록을 받아 더 강한 AI 학습에 쓸 수도 있습니다.</li>
+  </ul></li>
+<li><b>순위표</b>: 처음 화면 버튼 아래 AI 랭킹 1~5위와 내 순위, 성적 화면에 이번 달·분기 상금 랭킹 1~10위. 설정에서 <b>순위표 참여</b>를 끌 수 있습니다 (끄면 이름이 "익명").</li>
+</ul>
+
+<h2 id="settings">9. 설정</h2>
+<ul>
+<li>레버리지(×1·2·3·5·10) · 금액 방식(점당 1,000 / 3·4점 1,000 / 3·4점 2,000) · 판 수</li>
+<li>봇 속도(혼자 하기 · 방 만들기 따로) · 봇 실력(혼합 · 보통 · AI봇)</li>
+<li>보너스 패 장수·삼피 · 피박 · 광박 · 멍박 · 고박 · 흔들기·폭탄 · 총통 · 뻑 · 국진·난초 쌍피 · 비고도리 · 면제 · 합의 · 밤일낮장 등</li>
+<li>턴 시간 · 소리(음성·효과음) · AI 학습용 기록 켬/끔 · 순위표 참여</li>
+</ul>
+
+<h2 id="faq">10. 자주 묻는 질문</h2>
+<h3>같은 와이파이인데 방 목록에 방이 안 보여요</h3>
+<p>방장과 <b>같은 공유기</b>인지 확인하세요. 와이파이 이름이 두 개(통신사 모뎀, 공유기)면 다른 네트워크일 수 있습니다. 그래도 안 보이면 참가 코드로 들어오세요.</p>
+<h3>카톡 링크를 눌렀는데 앱이 안 열려요</h3>
+<p>앱을 먼저 설치하세요. 그래도 안 되면 링크 페이지의 참가 코드를 복사해 '참가하기 → 붙여넣기'.</p>
+<h3>방장 폰이 꺼졌어요</h3>
+<p>방은 방장 폰 안에 있어서 방장 앱이 꺼지면 게임이 끝납니다. 다른 사람 화면에는 지금까지의 성적표가 나오고, 이 기록도 성적 보기에 남습니다.</p>
+<h3>내 차례 시간이 지나면요?</h3>
+<p>턴 시간을 정해 두었으면, 기본 시간이 지난 뒤 30초 카운트다운이 나오고 그래도 안 두면 방이 힌트대로 대신 둡니다.</p>
+
+<h2>문의</h2>
+<p><img src="img/odina-logo-light.png" alt="Odina" style="height:40px;vertical-align:middle"> <img src="img/odina-logo-ko-light.png" alt="어디나" style="height:40px;vertical-align:middle"></p>
+<p>만든 곳 <b>Odina Studio</b> (anywhere · 어디나) · taekan66@gmail.com · <a href="privacy.html">개인정보처리방침</a></p>
+</main>
+</body>
+</html>
